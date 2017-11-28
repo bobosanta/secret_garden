@@ -9,8 +9,12 @@ body {
 	list-style: none;
 }
 .menu li a {
+	padding-bottom: 0.2em;
 	text-decoration: none;
 	position:relative;
+	color:black;
+	font-size: 1.2em;
+	font-weight: 400;
 }
 .menu li {
 	display: inline;
@@ -28,7 +32,7 @@ body {
 	 
 }
 .menu li a:active {
-	
+	color:#000;
 }
 .menu li a:after {
 	content:'';
@@ -49,19 +53,74 @@ body {
 	font-family: 'Amatic SC', cursive;
 	font-style: 'Amatic SC';
 	text-align: center;
+	color:white;
+	font-size: 6em;
+	padding-top:3%;
 }
 .hero-img {
+	background-image: url("assets/coverBrazi.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width:100%;
+    height:60vh;
 	text-align: center;
 }
-.motto  {
+.motto {
 	font-family: 'Amatic SC', cursive;
 	text-align: center;
+	font-size:3em;
+	color:white;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
-
+.hero-img .btn {
+	display:inline-block;
+	background-color: transparent;
+	border:2px solid white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	max-width:6em;
+	transition:0.4s;
+	border-radius: 0;
+	color:white;
+	cursor: pointer;
+}
+.hero-img .btn:hover {
+	background-color: white;
+	color:black;
+	transition:0.4s;
+}
+.heri-img .btn:active {
+	outline: none;
+}
+.hero-img .btn a {
+	text-decoration:none;
+	color:white;
+}
+.hero-img .btn a:hover {
+	color:black;
+}
 /*Produse*/
 
 .produse {
 	text-align:center;
+}
+.titlu_prod {
+	position: absolute;
+}
+.pseudo_border {
+	position:relative;
+	display: inline-block;
+}
+.pseudo_border:after {
+	content:'';
+    position:absolute;
+    left:0; right:0;
+    top:100%;
+    margin:10px auto;
+    width:30%;
+    height:6px;
+    background:#9f9645;
 }
 .produse .nume_prod {
 	font-family: 'Amatic SC', cursive;
@@ -72,8 +131,38 @@ body {
 }
 .descriere_prod {
 	text-align: center;
+	padding-top: 1em;
 }
-
+.produs img {
+	max-width:100%;
+}
+.produse .btn {
+	display:inline-block;
+	background-color: transparent;
+	border:2px solid #9f9645;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	max-width:6em;
+	transition:0.4s;
+	border-radius: 0;
+	color:#9f9645;
+	cursor: pointer;
+}
+.produse .btn:hover {
+	background-color: #9f9645;
+	color:white;
+	transition:0.4s;
+}
+.produse .btn a {
+	text-decoration:none;
+	color:#9f9645;
+}
+.produse .btn a:hover {
+	color:white;
+}
+.produse .btn:active {
+	outline:none;
+}
 /*contact form*/
 
 .contact_form h1 {
