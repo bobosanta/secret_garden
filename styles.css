@@ -136,6 +136,25 @@ body {
 .produs img {
 	max-width:100%;
 }
+.produs .btn_det {
+	display: inline-block;
+	background-color: transparent;
+	cursor: pointer;
+	color: black;
+	border: 2px solid #9f9645;
+	transition:0.4s;
+}
+.produs .btn_det:hover {
+	background-color: #9f9645;
+	color:white;
+	transition:0.4s;
+}
+.pret {
+	font-family: 'Raleway', sans-serif;
+}
+.produse .btn_det:active {
+	outline: none;
+}
 .produse .btn {
 	display:inline-block;
 	background-color: transparent;
